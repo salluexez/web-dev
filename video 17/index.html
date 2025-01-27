@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        div {
+            background-color: red;
+        }
+
+        /* class selector */
+        .red {
+            background-color: green;
+        }
+
+        /* ID selector */
+        #green {
+            background-color: rgb(128, 128, 161);
+        }
+
+        /* child selector */
+        div>p {
+            color: aqua;
+            background-color: yellow;
+        }
+
+        /* decendent selector  */
+        div p {
+            color: red;
+            background-color: navy;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector  */
+        a:visited {
+            color: skyblue;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        p:first-child{
+            background-color: rgb(78, 76, 94);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>I m firt paragraph in main fn</p>
+        <p>i am second para graph in main fn</p>
+    </main>
+    <div class="one">
+        i am one div
+    </div>
+    <div class="red">i m div
+        <article>
+            <p>i m a para inside article </p>
+        </article>
+        <p>i m a para inside div </p>
+    </div>
+    <div id="green"> i am new on the window </div>
+    <div>
+        <a blank href="https://www.google.com">go to google </a>
+        <a href="https://www.facebook.com">Go to facebook</a>
+    </div>
+</body>
+
+</html>
