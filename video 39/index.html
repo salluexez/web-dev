@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+        width: 80vw;
+        height: 50vh;
+        border: 2px solid black;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: [first]120px [second]100px ;
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        grid-template-rows: 100px 100px 100px ;
+        justify-items: center;
+        align-items: center;
+       }
+       .items {
+        border: 3px solid red;
+        height: 30px;
+        width: 40px;
+       }
+       .item-4 {
+        /* grid-row: 1/2; */
+        /* or we can start  */
+        grid-row-start: first;
+        grid-row-end: second;
+        grid-column: 1/2;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>
