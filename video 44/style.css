@@ -1,0 +1,81 @@
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 80px;
+    font-family: sans-serif;
+}
+.first span {
+    font-size: 40px;
+    font-weight: bold;
+}
+section span img {
+    width: 82px;
+    margin: 0 23px;
+}
+.first p {
+    font-size: 22px;
+    width: 53vw;
+    text-align: center;
+}
+.btn {
+    background-color: #00b6d1;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: 800;
+    padding: 14px 16px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+.green {
+    background: #5cb85c;
+}
+.second {
+    max-width: 80vw;
+    margin: auto;
+}
+.item {
+    padding: 23px;
+    background-color: #d2e4f0;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.item-lang {
+    font-weight: 700;
+    text-align: center;
+     padding-bottom: 30px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 23px;
+}
+
+.download :nth-child(2){
+    font-size: 25px;
+}
+.download img {
+    height: 40px;
+}
+.download {
+    display: flex;
+    font-family: serif;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width: 1145px) {
+    .grid {
+        grid-template-columns: 1fr;
+
+    }
+}
