@@ -143,13 +143,6 @@ nav button {
     color: white;
     align-items: center;
 }
-
-@media screen and (max_width: 1300px) {
-    .first {
-        flex-wrap: wrap;
-    }
-}
-
 .secImg {
     position: relative;
 }
@@ -223,6 +216,7 @@ footer {
     max-width: 60vw;
     margin: auto;
 }
+
 footer .Questions {
     padding: 34px 0;
 }
@@ -234,4 +228,54 @@ footer .Questions {
 .footer a {
     font-size: 14px;
     color: white;
+}
+
+@media screen and (max-width: 1300px) {
+
+   .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+    
+}
+@media screen and (max-width: 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+    .secImg img {
+    width: 305px;
+    }
+    .secImg video {
+    width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    nav {
+        max-width: 90vw;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .faq h2 {
+        font-size: 32px;
+    }
+    footer {
+        max-width: 90vw;
+    }
+    .footer-item {
+        align-items: center;
+    }
 }
